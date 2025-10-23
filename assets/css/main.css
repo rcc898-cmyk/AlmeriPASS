@@ -1665,6 +1665,12 @@ input, select, textarea {
 	display: none;
 	z-index: 1000;
 }
+/* Para pantallas a partir de 1024px (puedes ajustar el valor) */
+@media (min-width: 1024px) {
+  #accessibility-panel {
+    width: 350px; /* o el ancho que quieras */
+  }
+}
 #accessibility-panel h3 {
 	margin-top: 0;
 	font-size: 1.1em;
@@ -1689,7 +1695,12 @@ input, select, textarea {
 #accessibility-panel .toggle.active {
 	background: #00c896;
 }
-
+#accessibility-panel .description {
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: 4px;
+  line-height: 1.2em;
+}
 /* Footer */
 
 	#footer {
@@ -1725,4 +1736,12 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+		#footer .footer-logo {
+		margin-top: 10px;
+			}
+
+		#footer .footer-logo img {
+		  height: 100px; /* Ajusta según tamaño que quieras */
+		  vertical-align: middle;
 		}

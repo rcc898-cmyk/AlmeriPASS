@@ -112,8 +112,8 @@
 							
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<h2 class="major">Estamos Trabajando en Ello</h2>
+								<span class="image main"><img src="images/working.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
@@ -456,6 +456,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="chat.js"></script>
 			<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				const btn = document.getElementById("accessibility-btn");
@@ -489,6 +490,34 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				});
 			});
 			</script>
+			
+			<!-- Chat de IA -->
+<div id="chat-widget">
+    <div id="chat-header">Asistente</div>
+    <div id="chat-body">
+        <p>Hola, soy tu asistente de AlmeriPASS</p>
+		    <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+        <button id="chat-send">Enviar</button>
+        <button id="chat-audio">🎤</button>
+    </div>
+    </div>
+
+</div>
+
+
+<script>
+  const chatHeader = document.getElementById('chat-header');
+  const chatBody = document.getElementById('chat-body');
+
+  chatHeader.addEventListener('click', () => {
+    if(chatBody.style.display === "block"){
+      chatBody.style.display = "none";
+    } else {
+      chatBody.style.display = "block";
+    }
+  });
+</script>
 
 	</body>
 	

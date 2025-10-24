@@ -1,0 +1,28 @@
+// Toggle del chat
+const chatContainer = document.getElementById('chat-container');
+const chatHeader = document.getElementById('chat-header');
+const chatBody = document.getElementById('chat-body');
+const chatInput = document.getElementById('chat-input');
+const chatSend = document.getElementById('chat-send');
+
+chatHeader.addEventListener('click', () => {
+    chatBody.style.display = chatBody.style.display === 'none' ? 'block' : 'none';
+    document.getElementById('chat-input-area').style.display = chatBody.style.display;
+});
+
+// Enviar mensaje
+chatSend.addEventListener('click', () => {
+    const msg = chatInput.value.trim();
+    if(msg) {
+        const p = document.createElement('p');
+        p.textContent = msg;
+        chatBody.appendChild(p);
+        chatInput.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }
+});
+
+// También enviar con Enter
+chatInput.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter') chatSend.click();
+});

@@ -1745,3 +1745,20 @@ input, select, textarea {
 		  height: 100px; /* Ajusta según tamaño que quieras */
 		  vertical-align: middle;
 		}
+		
+/* Flecha curva posicionada sobre el logo */
+.arrow-container {
+  position: absolute;
+  top: -60px;       /* Ajusta la altura de la flecha */
+  left: -170px;     /* Ajusta la distancia desde el borde izquierdo */
+  z-index: 10;     /* Para que quede por encima del contenido */
+  animation: floatArrow 3s ease-in-out infinite;
+  pointer-events: none; /* Deja que se pueda hacer clic en el logo */
+}
+
+/* Animación de flotación (mantén la tuya) */
+@keyframes floatArrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}

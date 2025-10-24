@@ -15,6 +15,7 @@
 
 	</head>
 	<body class="is-preload">
+	
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -22,8 +23,35 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
+						  <a href="#PACKS">
 							<img src="images/logo-almeripass.jpg" style="width: 200px; height: auto; border-radius: 50%;" />
+						  </a>
+						  	<!-- Flecha curva con texto -->
+						<div class="arrow-container">
+						  <svg width="220" height="120" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+							<!-- Línea curva -->
+							<path id="curve" d="M10,110 Q110,10 210,60" stroke="#ffd700" stroke-width="3" fill="transparent" marker-end="url(#arrowhead)" />
+							
+							<!-- Definición de la flecha -->
+							<defs>
+							  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+								<polygon points="0 0, 10 3.5, 0 7" fill="#ffd700" />
+							  </marker>
+							</defs>
+							
+							<!-- Texto curvado -->
+							<text font-size="16" fill="#ffd700" font-family="Arial, sans-serif">
+							  <textPath href="#curve" startOffset="25%">Pincha aquí</textPath>
+							</text>
+						  </svg>
+							</div>
+
 						</div>
+
+						
+						
+						
+						
 						<div class="content">
 							<div class="inner">
 								<h1>Viaja por Almería y descubre lugares de forma inlcusiva y accesible</h1>
@@ -42,7 +70,46 @@
 				<!-- Main -->
 					<div id="main">
 
+					<!-- PACKS -->
+						<article id="PACKS">
+						  <h2 class="major">PACKS EXPERIENCIAS EN ALMERÍA</h2>
+						  <p>Descubre nuestros paquetes turísticos diseñados para disfrutar de Almería de forma inclusiva y accesible. ¡Elige el que más se adapte a ti!</p>
+						  
+						  <div class="packs-container">
+							
+							<!-- Pack 1 -->
+							<div class="pack">
+							  <span class="image main">
+								<img src="images/pack-playas.jpg" alt="Pack Playas de Almería" />
+							  </span>
+							  <h3>🌊 Pack Playas Accesibles</h3>
+							  <p>Disfruta de las mejores playas adaptadas de Almería con transporte accesible, guía local y material de apoyo incluido.</p>
+							  <p class="price"><strong>Precio:</strong> 89 € / persona</p>
+							</div>
 
+							<!-- Pack 2 -->
+							<div class="pack">
+							  <span class="image main">
+								<img src="images/pack-alcazaba.jpg" alt="Pack Alcazaba y centro histórico" />
+							  </span>
+							  <h3>🏰 Pack Cultural “La Alcazaba y el Casco Antiguo”</h3>
+							  <p>Recorrido guiado por la Alcazaba de Almería y su entorno histórico con intérprete de lengua de signos y accesibilidad garantizada.</p>
+							  <p class="price"><strong>Precio:</strong> 75 € / persona</p>
+							</div>
+
+							<!-- Pack 3 -->
+							<div class="pack">
+							  <span class="image main">
+								<img src="images/pack-cabo-gata.jpg" alt="Pack Cabo de Gata Natural" />
+							  </span>
+							  <h3>🌅 Pack Naturaleza en Cabo de Gata</h3>
+							  <p>Explora el Parque Natural de Cabo de Gata con visitas guiadas adaptadas, transporte accesible y picnic incluido.</p>
+							  <p class="price"><strong>Precio:</strong> 99 € / persona</p>
+							</div>
+
+						  </div>
+						</article>
+							
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
